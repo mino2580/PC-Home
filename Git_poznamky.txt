@@ -57,10 +57,34 @@ git clone <URL adresa repozitáře>
 
 
 
+Připojení VS Code k GitHub repozitáři
+
+Po vytvoření repozitáře vám GitHub zobrazí několik příkazů k přidání vzdáleného repozitáře.
+Vezměte si URL vašeho GitHub repozitáře (např. https://github.com/uzivatel/moje_repo.git).
+Otevřete terminál ve VS Code a přidejte vzdálený repozitář:
+
+bash
+Zkopírovat kód
+git remote add origin https://github.com/mino2580/pc-doma.git
+Pushněte svůj lokální repozitář na GitHub:
+
+git push -u origin master
+Pokud používáte hlavní větev pojmenovanou jako main (místo master), použijte:
+
+git push -u origin main
+Při prvním pokusu o push budete možná vyzváni k přihlášení na GitHub a autorizaci.
+Použijte svůj GitHub účet.
 
 
-
-
+Větve a sloučení
+git branch: Zobrazí seznam větví v repozitáři.
+git checkout <název-větve>: Přepne na jinou větev.
+git branch <název-větve>: Vytvoří novou větev.
+git merge <název-větve>: Sloučí změny z vybrané větve do aktuální větve.
+Synchronizace s GitHubem (vzdálený repozitář)
+git remote add origin <URL>: Připojí lokální repozitář ke vzdálenému repozitáři.
+git push -u origin <větev>: Nahraje lokální změny do vzdáleného repozitáře (GitHub).
+git pull: Stáhne poslední změny z vzdáleného repozitáře do vašeho lokálního repozitáře.
 
 
 
