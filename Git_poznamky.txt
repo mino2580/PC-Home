@@ -1,59 +1,59 @@
 git config --global --add safe.directory '*'
- vypnutím kontrol bezpeèného adresáøe, èím se ukonèí všechny chyby "nebezpeèného úloištì".
+ vypnutÃ­m kontrol bezpeÄnÃ©ho adresÃ¡Å™e, ÄÃ­mÅ¾ se ukonÄÃ­ vÅ¡echny chyby "nebezpeÄnÃ©ho ÃºloÅ¾iÅ¡tÄ›".
  
-Všechna nastavení si zobrazíme pøíkazem
+VÅ¡echna nastavenÃ­ si zobrazÃ­me pÅ™Ã­kazem
 git config --list
 
 git init
-pøíkaz pro vytvoøení repozitáøe:Vytvoøila se nám nová sloka .git/, ve které budou
-zdrojové kódy a informace o našem projektu.
+pÅ™Ã­kaz pro vytvoÅ™enÃ­ repozitÃ¡Å™e:VytvoÅ™ila se nÃ¡m novÃ¡ sloÅ¾ka .git/, ve kterÃ© budou
+zdrojovÃ© kÃ³dy a informace o naÅ¡em projektu.
 
 git status
-prikaz vypis stavu repositáøe 
-On branch master - Informace, e se nacházíme na vìtvi s názvem master.
-No commits yet -   Oznámení, e nebyly provedeny ádné commity na této
-vìtvi. Repozitáø ještì neobsahuje historii zmìn.
-Untracked files - Seznam nezaznamenanıch souborù.
+prikaz vypis stavu repositÃ¡Å™e 
+On branch master - Informace, Å¾e se nachÃ¡zÃ­me na vÄ›tvi s nÃ¡zvem master.
+No commits yet -   OznÃ¡menÃ­, Å¾e nebyly provedeny Å¾Ã¡dnÃ© commity na tÃ©to
+vÄ›tvi. RepozitÃ¡Å™ jeÅ¡tÄ› neobsahuje historii zmÄ›n.
+Untracked files - Seznam nezaznamenanÃ½ch souborÅ¯.
 Nothing added to commit but untracked files present (use "git add" to track)-
-Upozornìní, e jsme neprovedli ádné zmìny v commitech, ale máme
-nezaznamenané soubory, které mùeme pøidat do repozitáøe
-pomocí pøíkazu git add.
+UpozornÄ›nÃ­, Å¾e jsme neprovedli Å¾Ã¡dnÃ© zmÄ›ny v commitech, ale mÃ¡me
+nezaznamenanÃ© soubory, kterÃ© mÅ¯Å¾eme pÅ™idat do repozitÃ¡Å™e
+pomocÃ­ pÅ™Ã­kazu git add.
 
 
-git add <název souboru>  
-Pøidání souboru do stage
-Abychom zaèlenili soubor index.html do verzovacího systému,
-pøidáme ho do staging oblasti pomocí pøíkazu
+git add <nÃ¡zev souboru>  
+PÅ™idÃ¡nÃ­ souboru do stage
+Abychom zaÄlenili soubor index.html do verzovacÃ­ho systÃ©mu,
+pÅ™idÃ¡me ho do staging oblasti pomocÃ­ pÅ™Ã­kazu
 
-git commit -m "Název commitu"
-Pøidání souboru do commitu 
-Po pøidání všech potøebnıch souborù do staging oblasti vytvoøíme
-commit pøíkazem 
+git commit -m "NÃ¡zev commitu"
+PÅ™idÃ¡nÃ­ souboru do commitu 
+Po pÅ™idÃ¡nÃ­ vÅ¡ech potÅ™ebnÃ½ch souborÅ¯ do staging oblasti vytvoÅ™Ã­me
+commit pÅ™Ã­kazem 
 
 
-Commit si ovìøíme pøíkazem 
+Commit si ovÄ›Å™Ã­me pÅ™Ã­kazem 
 git log
 
 git commit
 poznamky s delsim popisem
 
-        1.Stisknutím klávesy I se pøepneme do reimu
+        1.StisknutÃ­m klÃ¡vesy I se pÅ™epneme do reÅ¾imu
 	editace.
-	2.Na první øádek napíšeme struènı popis commitu,
-	napøíklad Pøidán soubor index.html.
-	3.Ponecháme prázdnı øádek a pøesuneme se na tøetí
-	øádek.
-	4.Napíšeme podrobnı popis commitu, napøíklad
-	Vytvoøení nového projektu a pøidání HTML souboru index.html, kterı obsahuje základní HTML kód stránky..
-	5.Stiskem klávesy Esc se pøepneme do reimu
-	pøíkazù.
-	6.Napíšeme pøíkaz :wq, èím uloíme
-	soubor a ukonèíme editor.
+	2.Na prvnÃ­ Å™Ã¡dek napÃ­Å¡eme struÄnÃ½ popis commitu,
+	napÅ™Ã­klad PÅ™idÃ¡n soubor index.html.
+	3.PonechÃ¡me prÃ¡zdnÃ½ Å™Ã¡dek a pÅ™esuneme se na tÅ™etÃ­
+	Å™Ã¡dek.
+	4.NapÃ­Å¡eme podrobnÃ½ popis commitu, napÅ™Ã­klad
+	VytvoÅ™enÃ­ novÃ©ho projektu a pÅ™idÃ¡nÃ­ HTML souboru index.html, kterÃ½ obsahuje zÃ¡kladnÃ­ HTML kÃ³d strÃ¡nky..
+	5.Stiskem klÃ¡vesy Esc se pÅ™epneme do reÅ¾imu
+	pÅ™Ã­kazÅ¯.
+	6.NapÃ­Å¡eme pÅ™Ã­kaz :wq, ÄÃ­mÅ¾ uloÅ¾Ã­me
+	soubor a ukonÄÃ­me editor.
 
-Klonování repozitáøe se provede pomocí pøíkazu git clone,
-za kterı uvedeme URL adresu klonovaného repozitáøe. Syntaxe je
-následující: 
-git clone <URL adresa repozitáøe>
+KlonovÃ¡nÃ­ repozitÃ¡Å™e se provede pomocÃ­ pÅ™Ã­kazu git clone,
+za kterÃ½ uvedeme URL adresu klonovanÃ©ho repozitÃ¡Å™e. Syntaxe je
+nÃ¡sledujÃ­cÃ­: 
+git clone <URL adresa repozitÃ¡Å™e>
 
 
 
