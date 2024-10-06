@@ -1,0 +1,69 @@
+git config --global --add safe.directory '*'
+ vypnutím kontrol bezpeèného adresáøe, èím se ukonèí všechny chyby "nebezpeèného úloištì".
+ 
+Všechna nastavení si zobrazíme pøíkazem
+git config --list
+
+git init
+pøíkaz pro vytvoøení repozitáøe:Vytvoøila se nám nová sloka .git/, ve které budou
+zdrojové kódy a informace o našem projektu.
+
+git status
+prikaz vypis stavu repositáøe 
+On branch master - Informace, e se nacházíme na vìtvi s názvem master.
+No commits yet -   Oznámení, e nebyly provedeny ádné commity na této
+vìtvi. Repozitáø ještì neobsahuje historii zmìn.
+Untracked files - Seznam nezaznamenanıch souborù.
+Nothing added to commit but untracked files present (use "git add" to track)-
+Upozornìní, e jsme neprovedli ádné zmìny v commitech, ale máme
+nezaznamenané soubory, které mùeme pøidat do repozitáøe
+pomocí pøíkazu git add.
+
+
+git add <název souboru>  
+Pøidání souboru do stage
+Abychom zaèlenili soubor index.html do verzovacího systému,
+pøidáme ho do staging oblasti pomocí pøíkazu
+
+git commit -m "Název commitu"
+Pøidání souboru do commitu 
+Po pøidání všech potøebnıch souborù do staging oblasti vytvoøíme
+commit pøíkazem 
+
+
+Commit si ovìøíme pøíkazem 
+git log
+
+git commit
+poznamky s delsim popisem
+
+        1.Stisknutím klávesy I se pøepneme do reimu
+	editace.
+	2.Na první øádek napíšeme struènı popis commitu,
+	napøíklad Pøidán soubor index.html.
+	3.Ponecháme prázdnı øádek a pøesuneme se na tøetí
+	øádek.
+	4.Napíšeme podrobnı popis commitu, napøíklad
+	Vytvoøení nového projektu a pøidání HTML souboru index.html, kterı obsahuje základní HTML kód stránky..
+	5.Stiskem klávesy Esc se pøepneme do reimu
+	pøíkazù.
+	6.Napíšeme pøíkaz :wq, èím uloíme
+	soubor a ukonèíme editor.
+
+Klonování repozitáøe se provede pomocí pøíkazu git clone,
+za kterı uvedeme URL adresu klonovaného repozitáøe. Syntaxe je
+následující: 
+git clone <URL adresa repozitáøe>
+
+
+
+
+
+
+
+
+
+
+
+
+
